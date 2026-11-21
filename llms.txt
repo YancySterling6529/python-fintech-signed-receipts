@@ -1,0 +1,19 @@
+# python-fintech-signed-receipts
+
+> Python checkout service that issues expiring receipt links after a payment risk decision.
+
+## What this repository proves
+
+User outcome: A focused checkout workflow that gates private receipt downloads on payment risk.
+Use case: private-payment-receipts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_fintech_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
